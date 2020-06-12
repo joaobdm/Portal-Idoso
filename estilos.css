@@ -6,7 +6,7 @@ body {
 }
 
 #corpo_menu {
-  background-image: url(/website/imagens/background.jpg);
+  background-image: url(imagens/background.jpg);
   background-size: 110% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -106,3 +106,29 @@ body {
   } */
 
 /* Magic Stuff End -> */
+@media screen and (max-width:600px){
+  #corpo_menu{
+    background-image: none;
+    background-color: lightcyan;
+    //background-size: 100% 825px;
+  }
+  #logo_menu{
+    max-width: 95%;
+    margin-top: 5px;
+    
+  }
+  .opcao_interface{
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:980px){
+  #corpo_menu{
+    background-size: 100% 100%;
+  }
+  #logo_menu{
+    max-width: 50%;
+    margin-top: 1px;
+    padding-top: 0px;
+  }
+}
